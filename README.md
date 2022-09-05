@@ -1,3 +1,3 @@
-# Web App to check whether your BirthDate is Lucky or Not for MARK11
+# Is your Birthday Lucky?
 
-Project URL : here
+Project URL : https://clinquant-valkyrie-8ac4a7.netlify.app/
