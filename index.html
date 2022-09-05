@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is your Birthday Lucky?</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <div class="model">
+     <div class="model-container">
+        <h3 class="model-heading">
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Privacy Policy
+        </h3>
+        <p class="model-text"><strong>What personal data we collect and how we collect it.</strong>
+       We do not collect any data whatsoever from the users. We use client side javascript for all the calculations.</p>
+        <button class="model-btn">Close</button>
+     </div>
+    </div>
+    <div class="container">
+        <header class="header">
+            <h1 class="heading">Is Your Birthday Lucky?</h1>
+        </header>
+        <main class="main">
+            <form class="form">
+                <div class="form-section">
+                    <label for="bday">Enter Your DOB:</label>
+                    <input type="date" id="bday" required placeholder="Birthday">
+                </div>
+                <div class="form-section">
+                    <label for="lucky-num">Your Lucky Number:</label>
+                    <input required type="number" id="lucky-num" min="1" max="99">
+                </div>
+                <button type="submit" class="btn">Check Now</button>
+            </form>
+        </main>
+        <section>
+            <h1 class="result"></h1>
+            <img class="img" src="" alt="Happy or Sad">
+        </section>
+        <footer class="footer">
+            <small>&copy;All rights reserved.</small>
+        </footer>
+    </div>
+    <script src="assets/scripts/main.js"></script>
+</body>
+</html>
