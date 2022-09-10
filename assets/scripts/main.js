@@ -26,17 +26,19 @@ form.addEventListener("submit", (e) => {
   const luckyNumber = Number(luckyNum.value);
 
   const areYouLucky = dateSum % luckyNumber === 0 ? true : false;
-  console.log(areYouLucky);
   luckyNum.value = "";
   bday.value = "";
 
   section.classList.add("lucky-section");
 
   if (areYouLucky) {
-    result.textContent = "Congratulations, You're lucky person.";
+    result.textContent = "Congratulations, Your Birthday is Lucky.";
   } else {
-    result.textContent = `OHHH! You're missed by ${
-      dateSum % luckyNumber
-    } days from being lucky.`;
+    result.innerHTML = `
+      <h2>You are not lucky.</h2> 
+      <p>OHHH! You're missed by ${
+        dateSum % luckyNumber
+      } days from being lucky.</p>
+    `;
   }
 });
